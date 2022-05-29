@@ -19,4 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('<int:space_id>/', views.title, name='title'),
+    path('<int:space_id>/content/', views.content, name='content'),
 ]

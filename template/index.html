@@ -1,0 +1,9 @@
+{% if latest_space_list %}
+    <ul>
+    {% for space in latest_space_list %}
+        <li><a href="/coin/{{ space.id }}/">{{ space.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No coin are available.</p>
+{% endif %}
